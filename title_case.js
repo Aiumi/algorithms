@@ -12,3 +12,20 @@ function titleCase(str) {
 }
 
 titleCase(""); // enter the string here
+/* ALTERNATIVE METHOD
+  function titleCase(str) {
+  var lowerCased = str.toLowerCase();
+    var splitWords = lowerCased.split(" ");
+    
+    var newArray = [];
+    
+    for(var i = 0; i < splitWords.length; i++) {
+    	var word = splitWords[i];	
+      word = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+      newArray.push(word);
+    }
+    
+    return newArray.join(" "); 
+  }
+
+titleCase("my name is bob jones"); */
